@@ -46,6 +46,12 @@ function Hero({copyModalVisible, handleCopyModal}) {
         }
     }
 
+    const copyPassword = () => {
+        navigator.clipboard.writeText(password).then(() => {
+            handleCopyModal();
+        });
+    }
+
     const generatePassword = useCallback(() => {
         let characterList = '';
         
@@ -96,9 +102,7 @@ function Hero({copyModalVisible, handleCopyModal}) {
                         </div>
                     </div>
                     <div className="copy-btn-wrapper">
-                        <button type="button" onClick={(
-                            handleCopyModal
-                        )}>Copy</button>
+                        <button type="button" onClick={copyPassword}>Copy</button>
                     </div>
                   </form>
                 </div>
