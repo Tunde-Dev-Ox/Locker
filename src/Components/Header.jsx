@@ -5,7 +5,7 @@ function Header() {
         <header>
             <div className="header-wrapper">
                 <div className="logo-wrapper">
-                    <img src="/src/assets/logo.svg" alt="" />
+                    <img src="/assets/logo.svg" alt="logo" />
                     <span className="logo-text">Locker</span>
                 </div>
                 <div className="social-media">
