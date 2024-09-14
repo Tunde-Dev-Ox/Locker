@@ -1,0 +1,275 @@
+.hero {
+    width: 100%;
+    padding-top: 4rem;
+}
+
+.hero-wrapper {
+    max-width: 1050px;
+    padding: 0 1.3rem;
+    margin: 0 auto;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hero__heading {
+    font-size: clamp(3rem, 2.636rem + 1.82vw, 4rem);
+    margin-bottom: .8rem;
+    color: #000;
+    line-height: 1.1;
+    font-weight: 700;
+    text-align: center;
+    max-width: 700px;
+}
+
+.hero__heading span {
+    color: #007bff;
+}
+
+.hero__title {
+    font-size: 18px;
+    color: #333333b3;
+}
+
+.hero-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.password-form {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-control-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-right: 14px;
+}
+
+.form-control {
+    pointer-events: none;
+    text-overflow: ellipsis;
+    background-color: #fff;
+    border: 1px solid #C5D6E0;
+    box-shadow: inset 0px 2px 4px rgba(7, 29, 43, 0.12);
+    text-align: start;
+    padding: .5rem 18px;
+    transition: .1s;
+    position: relative;
+    font-size: clamp(1rem, 0.959rem + 0.2vw, 1.113rem);
+    line-height: 1.875rem;
+    padding: 12px 28px;
+    border-radius: 28px;
+    width: 88%;
+}
+
+.labelform {
+    position: absolute;
+    margin: 0;
+    text-align: start;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-overflow: -o-ellipsis-lastline;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    cursor: text;
+    pointer-events: none;
+    transition: .2s;
+    display: block;
+    width: 104px;
+    left: auto;
+    right: 45px;
+    top: 14px;
+    font-size: 14px;
+    color: #071d2b;
+    background-color: rgb(7, 36, 87);
+    text-align: center;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.reset-password {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 17px;
+    top: 18px;
+    cursor: pointer;
+}
+
+.reset-password img {
+    width: 100%;
+    height: 100%;
+}
+
+.copy-btn-wrapper {
+    width: 25%;
+}
+
+.copy-btn-wrapper button {
+    border-radius: 28px;
+    background-color: rgb(7, 36, 87);
+    padding: 12px 28px;
+    color: #fff;
+    text-align: center;
+    outline: 0;
+    border: 0;
+    font-size: 20px;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+.password-character {
+    width: 100%;
+    margin-top: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.password-number {
+    display: flex;
+    align-items: center;
+}
+
+.number-text {
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.password-length-wrapper {
+    margin-left: .6rem;
+    display: flex;
+    align-items: center;
+}
+
+.minus, .plus {
+    background-color: #fff;
+    /* padding: 10px 11px; */
+    height: 48px;
+    width: 48px;
+    border: 1px solid #000;
+    border-radius: 100%;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.password-length {
+    display: inline-block;
+    margin: 0 8px;
+    font-size: 18px;
+}
+
+.characters-used {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.character-used-text {
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.characters-input-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    gap: .6rem;
+}
+
+.characters-input {
+    display: flex;
+    align-items: center;
+}
+
+.characters-input input {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.characters-input label {
+    font-size: 20px;
+    margin-left: 3px;
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+.hero-img {
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+}
+
+.hero-img img {
+    width: 100%;
+}
+
+@media screen and (max-width: 878px) {
+    .password-form {
+        flex-direction: column;
+    }
+
+    .form-control-wrapper {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 14px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .characters-used {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .character-used-text {
+        display: inline-block;
+        margin-bottom: .5rem;
+    }
+
+    .password-form {
+        width: 100%;
+    }
+
+    .form-control-wrapper {
+        width: 100%;
+    }
+
+    .copy-btn-wrapper {
+        width: 100%;
+    }
+
+    .form-control {
+        width: unset;
+    }
+
+    .labelform {
+        width: 50px;
+        font-size: 12px;
+        top: 16px;
+    }
+}
