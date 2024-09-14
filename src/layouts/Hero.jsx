@@ -92,7 +92,7 @@ function Hero({copyModalVisible, handleCopyModal}) {
                         className="labelform"
                         >{passwordStrength()}</label>
                         <div className="reset-password" onClick={generatePassword}>
-                            <img src="/src/assets/reset-svgrepo-com.svg" alt="reset-icon" />
+                            <img src="/assets/reset-svgrepo-com.svg" alt="reset-icon" />
                         </div>
                     </div>
                     <div className="copy-btn-wrapper">
@@ -163,7 +163,7 @@ function Hero({copyModalVisible, handleCopyModal}) {
                     </div>
                 </div>
                 <div className="hero-img">
-                    <img src="/src/assets/4498897.jpg" alt="password illustration" />
+                    <img src="/assets/4498897.jpg" alt="password illustration" />
                 </div>
             </div>
         </div>

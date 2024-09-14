@@ -10,13 +10,13 @@ function Header() {
                 </div>
                 <div className="social-media">
                     <a href="https://github.com/Tunde-Dev-Ox" target="_blank" rel="noopener noreferrer">
-                    <img src="/src/assets/github-svgrepo-com.svg" alt="github" />
+                    <img src="/assets/github-svgrepo-com.svg" alt="github" />
                     </a>
                     <a href="https://www.linkedin.com/in/josephtunde/" target="_blank" rel="noopener noreferrer">
-                    <img src="/src/assets/linkedin-svgrepo-com.svg" alt="linkedin" />
+                    <img src="/assets/linkedin-svgrepo-com.svg" alt="linkedin" />
                     </a>
                     <a href="https://x.com/__jot" target="_blank" rel="noopener noreferrer">
-                    <img src="/src/assets/twitter-svgrepo-com.svg" alt="twitter" />
+                    <img src="/assets/twitter-svgrepo-com.svg" alt="twitter" />
                     </a>
                 </div>
             </div>

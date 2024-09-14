@@ -7,7 +7,7 @@ function CopyModal({copyModalVisible, closeModal}) {
         <div className={`modal ${copyModalVisible ? 'show' : 'hide'}`}>
             <div className="modal-wrapper">
                 <button className="close" onClick={closeModal}>
-                    <img src="/src/assets/wrong-cancel-close-svgrepo-com.svg" alt="close" />
+                    <img src="/assets/wrong-cancel-close-svgrepo-com.svg" alt="close" />
                 </button>
                 <div className="copytext">
                     <h2>Copied!</h2>
@@ -15,7 +15,7 @@ function CopyModal({copyModalVisible, closeModal}) {
                     <span>To paste the password someplace else, press CTRL + V on your keyboard.</span>
                 </div>
                 <div className="copyimage">
-                    <img src="/src/assets/illustration-modal.svg" alt="clipboard" />
+                    <img src="/assets/illustration-modal.svg" alt="clipboard" />
                 </div>
             </div>
         </div>
